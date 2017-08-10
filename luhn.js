@@ -35,8 +35,8 @@ check = (num) => {
   let numMinusCheckDigit = parseInt(num.toString().slice(0, -1));
   let arrMinusCheckDigit = String(numMinusCheckDigit).split("").map(Number);
 
-  // Double every 2nd digit from R to L, splitting if product is >9
-  for (i = (arrMinusCheckDigit.length - 1); i >= 0; (i -= 2)) {
+  // Double every 2nd digit from R to L, splitting into digits if product is >9
+  for (i = (arrMinusCheckDigit.length - 1); i >= 0; i -= 2) {
     let doubled = arrMinusCheckDigit[i] * 2;
     if (doubled > 9) {
       let splitNum = String(doubled).split("").map(Number);
@@ -59,6 +59,7 @@ check = (num) => {
     return sum + value;
   }, 0);
 
+  // Check of sum is divisible by ten
   if (sumDigits % 10 === 0) {
     return console.log(`Checksum passes. Number ${num} is valid.`);
   } else {
