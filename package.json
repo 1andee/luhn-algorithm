@@ -1,0 +1,23 @@
+{
+  "name": "luhn-algorithm",
+  "version": "1.0.0",
+  "description": "Write a function check, which, given a number, returns whether it is valid or not according to the [Luhn Algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm).",
+  "main": "luhn.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1andee/luhn-algorithm.git"
+  },
+  "author": "Ian Duke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1andee/luhn-algorithm/issues"
+  },
+  "homepage": "https://github.com/1andee/luhn-algorithm#readme",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0"
+  }
+}
